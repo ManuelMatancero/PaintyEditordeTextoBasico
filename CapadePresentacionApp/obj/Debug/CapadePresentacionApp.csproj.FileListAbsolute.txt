@@ -1,0 +1,12 @@
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\bin\Debug\CapadePresentacionApp.exe.config
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\bin\Debug\CapadePresentacionApp.exe
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\bin\Debug\CapadePresentacionApp.pdb
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.csproj.AssemblyReference.cache
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.Form1.resources
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.Properties.Resources.resources
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.csproj.GenerateResource.cache
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.csproj.CoreCompileInputs.cache
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.exe
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.pdb
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.FPaint.resources
+C:\Users\18297\source\repos\CapadePresentacionApp\CapadePresentacionApp\obj\Debug\CapadePresentacionApp.FEditText.resources
