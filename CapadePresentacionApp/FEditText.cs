@@ -62,7 +62,7 @@ namespace CapadePresentacionApp
             }
                 
         }
-
+        //Acciones para guardar archivo 
         private async void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(SaveFileDialog guardarArchivo = new SaveFileDialog() {Filter= "Text Documents|*.txt", ValidateNames= true })
@@ -77,7 +77,7 @@ namespace CapadePresentacionApp
                 }
             }
         }
-
+        //Acciones para Abrir Archivo
         private async void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog buscadorArchivo = new OpenFileDialog() { Filter = "Text Documents|*.txt", ValidateNames = true, Multiselect = false })
