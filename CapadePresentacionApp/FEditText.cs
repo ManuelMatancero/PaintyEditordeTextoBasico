@@ -65,9 +65,13 @@ namespace CapadePresentacionApp
         //Acciones para guardar archivo 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Este objeto de tipo SaveFileDialog muestra una ventana donde se puede seleccionar la ubicacion 
+            //donde se guardara el archivo y su nombre.
             using(SaveFileDialog guardarArchivo = new SaveFileDialog() {Filter= "Text Documents|*.txt", ValidateNames= true })
             {
-
+                //una vez el usuario presione guardar se creara el archivo y a traves del objeto escribirArchivo 
+                //se le dara por parametro la ubicacion y el nombre del archivo y procedera a escribir el texto que se encuentra
+                //en el textBox en dicho archivo
                 if (guardarArchivo.ShowDialog()==DialogResult.OK)
                 {       
                     using(StreamWriter escribirArchivo = new StreamWriter(guardarArchivo.FileName))
@@ -80,9 +84,12 @@ namespace CapadePresentacionApp
         }
         //Acciones para Abrir Archivo
         private  void abrirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {//Para abrir un archivo txt se crea un objeto de tipo OpenFileDialog
+            //el cual abre una ventana donde se puede seleccionar el archivo que se desea abrir
             using (OpenFileDialog buscadorArchivo = new OpenFileDialog() { Filter = "Text Documents|*.txt", ValidateNames = true, Multiselect = false })
             {
+                //Una vez seleccionado, el objeto de tipo streamReader recibira por parametro la ubicacion
+                //y el nombre de ese archivo, lo localiza y el textBox1 pasa a ser igual a todo el texto que se encuentre en el archivo
                 if (buscadorArchivo.ShowDialog() == DialogResult.OK)
                 {
                     using(StreamReader archivoLeer = new StreamReader(buscadorArchivo.FileName))
