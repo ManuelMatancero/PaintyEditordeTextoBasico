@@ -63,22 +63,23 @@ namespace CapadePresentacionApp
                 
         }
         //Acciones para guardar archivo 
-        private async void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(SaveFileDialog guardarArchivo = new SaveFileDialog() {Filter= "Text Documents|*.txt", ValidateNames= true })
             {
+
                 if (guardarArchivo.ShowDialog()==DialogResult.OK)
-                {
+                {       
                     using(StreamWriter escribirArchivo = new StreamWriter(guardarArchivo.FileName))
                     {
-                        await escribirArchivo.WriteLineAsync(textBox1.Text);
+                        escribirArchivo.WriteLine(textBox1.Text);
                         MessageBox.Show("Archivo Guardado, correctamente","Message", MessageBoxButtons.OK , MessageBoxIcon.Information);
                     }
                 }
             }
         }
         //Acciones para Abrir Archivo
-        private async void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        private  void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog buscadorArchivo = new OpenFileDialog() { Filter = "Text Documents|*.txt", ValidateNames = true, Multiselect = false })
             {
@@ -86,7 +87,7 @@ namespace CapadePresentacionApp
                 {
                     using(StreamReader archivoLeer = new StreamReader(buscadorArchivo.FileName))
                     {
-                        textBox1.Text = await archivoLeer.ReadToEndAsync();
+                        textBox1.Text = archivoLeer.ReadToEnd();
                     }
                 }
             }
