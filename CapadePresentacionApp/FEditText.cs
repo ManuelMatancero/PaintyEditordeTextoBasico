@@ -57,8 +57,8 @@ namespace CapadePresentacionApp
             if (textBox1.SelectedText != "")
             {
                 Clipboard.SetDataObject(textBox1.SelectedText);
-                //para cortar limpio el textBox
-                textBox1.Clear();
+                //para cortar limpio el texto seleccionado
+                textBox1.SelectedText = "";
             }
                 
         }
